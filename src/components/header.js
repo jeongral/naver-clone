@@ -6,6 +6,7 @@ export default function Header() {
         <div className="header_inner">
             <SearchBar />
             <ShortcutList />
+            <div className="menu_area"><button class="btn_menu"></button></div>
         </div>
     </div>)
 }
