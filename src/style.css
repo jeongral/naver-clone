@@ -1,0 +1,177 @@
+:root {
+  --color_body: #101010;
+  --color_green: #03c75a;
+}
+
+html {
+  font-size: 10.5px;
+  line-height: 10.5px;
+  display: block;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #fff 5%, #fdfdfe 38%);
+  display: block;
+}
+
+body, input, textarea, select, button, table {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: var(--color_body);
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd,
+table, th, td, form, fieldset, legend, input, textarea, button, select {
+  margin: 0;
+  padding: 0;
+}
+
+input, button {
+  border-radius: 0;
+  border: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrap {
+  margin: 0;
+  padding: 0;
+  min-width: 1340px;
+}
+
+.header {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.header .header_inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  height: 156px;
+  padding: 70px 0 42px;
+}
+
+.header .header_inner .search_area {
+  width: 706px;
+  height: 58px;
+  border: 1px solid var(--color_green);
+  border-radius: 33px;
+  background-color: #FFF;
+}
+
+.header .header_inner .search_area:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header .header_inner .search_group_inner {
+  position: relative;
+  padding-left: 67px;
+}
+
+.header .header_inner .search_input_box {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header_inner .search_input_box .search_input {
+  width: 480px;
+  height: 100%;
+  position: relative;
+  padding: 17px 0;
+  background-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  font-size: 2rem;
+  line-height: 24px;
+  font-weight: bold;
+  outline: 0;
+  opacity: 0;
+}
+
+.header .header_inner .search_input_box .search_input:focus {
+  opacity: 1;
+}
+
+.header .header_inner .search_input_box .search_input::placeholder {
+  color: #e4e4e4;
+}
+
+.header .header_inner .btn_search {
+  padding: 17px 27px 16px 10px;
+  cursor: pointer;
+}
+
+.header .header_inner .btn_search .icon {
+  width: 25px;
+  height: 25px;
+  display: block;
+  fill: var(--color_green);
+}
+
+.shortcut_area {
+  position: relative;
+  width: 676px;
+}
+
+.header .header_inner .shortcut_list {
+  display: flex;
+  justify-content: center;
+}
+
+.header .header_inner .shortcut_list .link_service {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  width: 64px;
+}
+
+.header .header_inner .shortcut_list .service_icon {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #e4e4e4;
+  border-radius: 20px;
+}
+
+.header .header_inner .shortcut_list .service_name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  line-height: 20px;
+  text-align: center;
+}
